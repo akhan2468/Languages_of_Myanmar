@@ -1,0 +1,1682 @@
+[
+ {
+  "name": "Rawang",
+  "glottocode": "rawa1265",
+  "lat": 27.1027,
+  "lon": 97.0738,
+  "family": "Sino-Tibetan",
+  "branch": "Nungish",
+  "group": "Other",
+  "state": "Kachin",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "CN",
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Mru",
+  "glottocode": "mruu1242",
+  "lat": 21.472,
+  "lon": 92.318,
+  "family": "Sino-Tibetan",
+  "branch": "Mruic",
+  "group": "Other",
+  "state": "Rakhine",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "BD",
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Anu-Hkongso",
+  "glottocode": "anuu1241",
+  "lat": 21.5,
+  "lon": 93.05,
+  "family": "Sino-Tibetan",
+  "branch": "Mruic",
+  "group": "Other",
+  "state": "Chin",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Mon",
+  "glottocode": "monn1252",
+  "lat": 15.4939,
+  "lon": 98.1225,
+  "family": "Austroasiatic",
+  "branch": "Monic",
+  "group": "Other",
+  "state": "Kayin",
+  "status": "Threatened",
+  "docs": "Long grammar",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Nung (Myanmar)",
+  "glottocode": "nung1282",
+  "lat": 27.2887,
+  "lon": 98.7333,
+  "family": "Sino-Tibetan",
+  "branch": "Nungish",
+  "group": "Other",
+  "state": "Kachin",
+  "status": "Nearly extinct",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Mobwa Karen",
+  "glottocode": "mobw1234",
+  "lat": 19.0443,
+  "lon": 96.6027,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayin",
+  "status": "Threatened",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Pa'o Karen",
+  "glottocode": "paok1235",
+  "lat": 20.211,
+  "lon": 97.5969,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Paku Karen",
+  "glottocode": "paku1238",
+  "lat": 18.8137,
+  "lon": 97.1203,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Lahta-Zayein Karen",
+  "glottocode": "zaye1235",
+  "lat": 20.16,
+  "lon": 96.908,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Yinbaw Karen",
+  "glottocode": "yinb1236",
+  "lat": 19.0383,
+  "lon": 97.2134,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Geko Karen",
+  "glottocode": "geko1235",
+  "lat": 19.6741,
+  "lon": 96.5308,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Mandalay",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Kayan Lahwi",
+  "glottocode": "kaya1315",
+  "lat": 19.5183,
+  "lon": 97.4138,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Danau",
+  "glottocode": "dana1252",
+  "lat": 20.4957,
+  "lon": 96.998,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Shifting",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Moken",
+  "glottocode": "moke1242",
+  "lat": 10.1474,
+  "lon": 98.6765,
+  "family": "Austronesian",
+  "branch": "Malayo-Polynesian",
+  "group": "Other",
+  "state": "Tanintharyi",
+  "status": "Shifting",
+  "docs": "Long grammar",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Yintale Karen",
+  "glottocode": "yint1235",
+  "lat": 18.9378,
+  "lon": 97.3368,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Threatened",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Geba Karen",
+  "glottocode": "geba1237",
+  "lat": 19.4991,
+  "lon": 96.9492,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Bwe Karen",
+  "glottocode": "bwek1238",
+  "lat": 18.9796,
+  "lon": 96.9936,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Brek Karen",
+  "glottocode": "brek1238",
+  "lat": 19.0561,
+  "lon": 96.8365,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayin",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Manumanaw Karen",
+  "glottocode": "manu1255",
+  "lat": 19.165,
+  "lon": 96.9531,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Wewaw",
+  "glottocode": "wewa1238",
+  "lat": 19.0206,
+  "lon": 96.5405,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Bago",
+  "status": "Extinct",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "S'gaw Karen",
+  "glottocode": "sgaw1245",
+  "lat": 17.9872,
+  "lon": 97.7126,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayin",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Chak",
+  "glottocode": "chak1270",
+  "lat": 21.4134,
+  "lon": 92.5953,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Chin",
+  "status": "Threatened",
+  "docs": "Long grammar",
+  "countries": [
+   "BD",
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Southern Jinghpaw",
+  "glottocode": "kach1280",
+  "lat": 25.4634,
+  "lon": 97.3278,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Kachin",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Rumai Palaung",
+  "glottocode": "ruma1248",
+  "lat": 23.6404,
+  "lon": 97.3172,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Moribund",
+  "docs": "Grammar sketch",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Jejara Naga",
+  "glottocode": "para1302",
+  "lat": 25.48,
+  "lon": 94.92,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "East-Central Tangkhul Naga",
+  "glottocode": "tang1336",
+  "lat": 25.0489,
+  "lon": 94.3567,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Shifting",
+  "docs": "Long grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Eastern Khumi Chin",
+  "glottocode": "east2779",
+  "lat": 21.3425,
+  "lon": 93.155,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Khumi Chin",
+  "glottocode": "khum1248",
+  "lat": 22.8712,
+  "lon": 92.9895,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "BD",
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Mro Chin",
+  "glottocode": "mroc1235",
+  "lat": 19.71,
+  "lon": 93.995,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Rakhine",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Senthang Chin",
+  "glottocode": "sent1260",
+  "lat": 21.8936,
+  "lon": 93.8087,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Zotung Chin",
+  "glottocode": "zotu1235",
+  "lat": 22.5298,
+  "lon": 93.29,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Laamtuk Thet",
+  "glottocode": "tawr1235",
+  "lat": 22.4996,
+  "lon": 94.0957,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Magway",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Western Kayah",
+  "glottocode": "west2409",
+  "lat": 18.687,
+  "lon": 97.4877,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayah",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Eastern Kayah",
+  "glottocode": "east2342",
+  "lat": 19.8939,
+  "lon": 98.3359,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Pwo Western Karen",
+  "glottocode": "pwow1235",
+  "lat": 17.3622,
+  "lon": 97.7044,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayin",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Pwo Eastern Karen",
+  "glottocode": "pwoe1235",
+  "lat": 15.1915,
+  "lon": 98.7355,
+  "family": "Sino-Tibetan",
+  "branch": "Karenic",
+  "group": "Karen",
+  "state": "Kayin",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Hpon",
+  "glottocode": "hpon1238",
+  "lat": 24.4606,
+  "lon": 97.1142,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Kachin",
+  "status": "Extinct",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Lahu Shi",
+  "glottocode": "lahu1252",
+  "lat": 21.2078,
+  "lon": 100.97,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "CN",
+   "LA",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Lahu",
+  "glottocode": "lahu1253",
+  "lat": 21.2701,
+  "lon": 100.214,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "LA",
+   "MM",
+   "TH",
+   "VN"
+  ]
+ },
+ {
+  "name": "Kaisanic",
+  "glottocode": "kais1245",
+  "lat": 26.7012,
+  "lon": 95.6024,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Pangwa Naga",
+  "glottocode": "tase1235",
+  "lat": 27.2572,
+  "lon": 96.3855,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Makyamic",
+  "glottocode": "maky1235",
+  "lat": 26.3037,
+  "lon": 95.6045,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Lao Naga",
+  "glottocode": "laon1234",
+  "lat": 26.4277,
+  "lon": 95.1937,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Taman (Myanmar)",
+  "glottocode": "tama1328",
+  "lat": 25.1566,
+  "lon": 95.1171,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Extinct",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Burma Pyu",
+  "glottocode": "burm1262",
+  "lat": 21.3193,
+  "lon": 95.8979,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Mandalay",
+  "status": "Extinct",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Kado",
+  "glottocode": "kado1242",
+  "lat": 21.5259,
+  "lon": 100.092,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Shan",
+  "status": "Threatened",
+  "docs": "Long grammar",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Ruching Palaung",
+  "glottocode": "ruch1235",
+  "lat": 21.6176,
+  "lon": 98.0915,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Moribund",
+  "docs": "Grammar sketch",
+  "countries": [
+   "CN",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Shwe Palaung",
+  "glottocode": "shwe1236",
+  "lat": 23.6729,
+  "lon": 97.7972,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Riang (Myanmar)",
+  "glottocode": "rian1261",
+  "lat": 24.0521,
+  "lon": 98.8333,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Threatened",
+  "docs": "Texts / phonology",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Yinchia",
+  "glottocode": "yinc1238",
+  "lat": 20.0833,
+  "lon": 97.9166,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Moribund",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Makuri Naga",
+  "glottocode": "maku1273",
+  "lat": 26.6,
+  "lon": 94.95,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Long Phuri Naga",
+  "glottocode": "long1375",
+  "lat": 25.5578,
+  "lon": 94.9838,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Ngawn Chin",
+  "glottocode": "ngaw1239",
+  "lat": 21.9303,
+  "lon": 93.5835,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Zou",
+  "glottocode": "zouu1235",
+  "lat": 24.0649,
+  "lon": 93.9253,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Threatened",
+  "docs": "Grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Sizang Chin",
+  "glottocode": "siyi1240",
+  "lat": 23.8192,
+  "lon": 93.6884,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Tedim Chin",
+  "glottocode": "tedi1235",
+  "lat": 23.6079,
+  "lon": 93.519,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Thado Chin",
+  "glottocode": "thad1238",
+  "lat": 24.096,
+  "lon": 93.722,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Moribund",
+  "docs": "Long grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Asho Chin",
+  "glottocode": "asho1236",
+  "lat": 21.393,
+  "lon": 93.5069,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "BD",
+   "MM"
+  ]
+ },
+ {
+  "name": "Chinbon Chin",
+  "glottocode": "chin1478",
+  "lat": 20.0776,
+  "lon": 94.0506,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Rakhine",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Zyphe",
+  "glottocode": "zyph1238",
+  "lat": 22.524,
+  "lon": 93.264,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Lautu",
+  "glottocode": "laut1236",
+  "lat": 22.2009,
+  "lon": 93.4448,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Mara",
+  "glottocode": "mara1382",
+  "lat": 22.1138,
+  "lon": 93.0387,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Threatened",
+  "docs": "Grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Haka Chin",
+  "glottocode": "haka1240",
+  "lat": 22.8735,
+  "lon": 92.8208,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Shifting",
+  "docs": "Grammar",
+  "countries": [
+   "BD",
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Lamkang",
+  "glottocode": "lamk1238",
+  "lat": 24.1523,
+  "lon": 94.2706,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Shifting",
+  "docs": "Grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Anal",
+  "glottocode": "anal1239",
+  "lat": 24.0506,
+  "lon": 94.2806,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Shifting",
+  "docs": "Grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Zaiwa",
+  "glottocode": "zaiw1241",
+  "lat": 24.1726,
+  "lon": 98.3643,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Pela",
+  "glottocode": "pela1242",
+  "lat": 24.2142,
+  "lon": 97.9183,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Threatened",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Maru",
+  "glottocode": "maru1249",
+  "lat": 25.6,
+  "lon": 98.0,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Kachin",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Ngochang",
+  "glottocode": "ngoc1235",
+  "lat": 25.35,
+  "lon": 97.4333,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Kachin",
+  "status": "Shifting",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Longchuan Achang",
+  "glottocode": "acha1249",
+  "lat": 24.3479,
+  "lon": 97.7438,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Kachin",
+  "status": "Shifting",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Intha-Danu",
+  "glottocode": "inth1238",
+  "lat": 20.392,
+  "lon": 96.9388,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Taungyo",
+  "glottocode": "taun1248",
+  "lat": 20.4104,
+  "lon": 96.7401,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Lainong Naga",
+  "glottocode": "lein1237",
+  "lat": 26.4481,
+  "lon": 95.4,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Chen Naga",
+  "glottocode": "chen1271",
+  "lat": 26.324,
+  "lon": 95.427,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Muak",
+  "glottocode": "tail1246",
+  "lat": 21.4293,
+  "lon": 100.985,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Threatened",
+  "docs": "Texts / phonology",
+  "countries": [
+   "LA",
+   "MM"
+  ]
+ },
+ {
+  "name": "Samtao",
+  "glottocode": "samt1238",
+  "lat": 22.0185,
+  "lon": 99.2576,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "CN",
+   "LA",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Blang",
+  "glottocode": "blan1242",
+  "lat": 22.0092,
+  "lon": 99.7405,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "CN",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Gangte",
+  "glottocode": "gang1266",
+  "lat": 24.5113,
+  "lon": 94.1681,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Ralte",
+  "glottocode": "ralt1242",
+  "lat": 25.0201,
+  "lon": 94.7381,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Sagaing",
+  "status": "Moribund",
+  "docs": "Texts / phonology",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Paite Chin",
+  "glottocode": "pait1244",
+  "lat": 24.0381,
+  "lon": 93.6136,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Threatened",
+  "docs": "Long grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Sumtu Chin",
+  "glottocode": "sumt1234",
+  "lat": 20.1238,
+  "lon": 93.8367,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Rakhine",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Mün Chin",
+  "glottocode": "munc1235",
+  "lat": 20.289,
+  "lon": 94.3929,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Magway",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Daai Chin",
+  "glottocode": "daai1236",
+  "lat": 20.7347,
+  "lon": 93.7853,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Rakhine",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Kaang Chin",
+  "glottocode": "kaan1248",
+  "lat": 21.5091,
+  "lon": 93.6262,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Falam Chin",
+  "glottocode": "fala1243",
+  "lat": 22.91,
+  "lon": 93.68,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "BD",
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Bualkhaw Chin",
+  "glottocode": "bual1235",
+  "lat": 22.91,
+  "lon": 93.68,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Bawm Chin",
+  "glottocode": "bawm1236",
+  "lat": 22.4405,
+  "lon": 92.9255,
+  "family": "Sino-Tibetan",
+  "branch": "Kuki-Chin-Naga",
+  "group": "Chin & Naga",
+  "state": "Chin",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "BD",
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Lashi",
+  "glottocode": "lash1243",
+  "lat": 26.0992,
+  "lon": 98.5481,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Kachin",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Burmese",
+  "glottocode": "nucl1310",
+  "lat": 21.6,
+  "lon": 95.6,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Mandalay",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "BD",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Tavoyan",
+  "glottocode": "tavo1242",
+  "lat": 14.1078,
+  "lon": 98.194,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Tanintharyi",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Pounyiu-Gongvan Naga",
+  "glottocode": "pony1234",
+  "lat": 26.35,
+  "lon": 95.25,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Not endangered",
+  "docs": "Wordlist or less",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Khiamniungan Naga",
+  "glottocode": "khia1236",
+  "lat": 26.2008,
+  "lon": 95.0168,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Wordlist or less",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Konyak Naga",
+  "glottocode": "kony1248",
+  "lat": 26.6823,
+  "lon": 95.0598,
+  "family": "Sino-Tibetan",
+  "branch": "Brahmaputran",
+  "group": "Kachin (Jingpho)",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "South Wa",
+  "glottocode": "para1301",
+  "lat": 22.8658,
+  "lon": 99.375,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Zhenkang Wa",
+  "glottocode": "nucl1290",
+  "lat": 23.1024,
+  "lon": 99.108,
+  "family": "Austroasiatic",
+  "branch": "Khasi-Palaung",
+  "group": "Palaung & Wa",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Rakhine",
+  "glottocode": "rakh1245",
+  "lat": 20.5274,
+  "lon": 93.1459,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Rakhine",
+  "status": "Not endangered",
+  "docs": "Grammar sketch",
+  "countries": [
+   "BD",
+   "MM"
+  ]
+ },
+ {
+  "name": "Lisu",
+  "glottocode": "lisu1250",
+  "lat": 26.91,
+  "lon": 98.94,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Kachin",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "IN",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Akha",
+  "glottocode": "akha1245",
+  "lat": 21.2309,
+  "lon": 100.964,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "LA",
+   "MM",
+   "TH",
+   "VN"
+  ]
+ },
+ {
+  "name": "Pyen",
+  "glottocode": "pyen1239",
+  "lat": 20.759,
+  "lon": 100.029,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "MM"
+  ]
+ },
+ {
+  "name": "Bisu",
+  "glottocode": "bisu1244",
+  "lat": 20.8542,
+  "lon": 99.9862,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Shifting",
+  "docs": "Long grammar",
+  "countries": [
+   "CN",
+   "LA",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Laomian",
+  "glottocode": "laom1237",
+  "lat": 21.95,
+  "lon": 100.1,
+  "family": "Sino-Tibetan",
+  "branch": "Burmo-Qiangic",
+  "group": "Burmish & Lolo",
+  "state": "Shan",
+  "status": "Shifting",
+  "docs": "Grammar sketch",
+  "countries": [
+   "CN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Rohingya",
+  "glottocode": "rohi1238",
+  "lat": 20.8331,
+  "lon": 92.394,
+  "family": "Indo-European",
+  "branch": "Classical Indo-European",
+  "group": "Other",
+  "state": "Rakhine",
+  "status": "Not endangered",
+  "docs": "Texts / phonology",
+  "countries": [
+   "BD",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Shan",
+  "glottocode": "shan1277",
+  "lat": 21.5995,
+  "lon": 98.0342,
+  "family": "Tai-Kadai",
+  "branch": "Kam-Tai",
+  "group": "Tai (Shan)",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "CN",
+   "MM",
+   "TH"
+  ]
+ },
+ {
+  "name": "Khamti",
+  "glottocode": "kham1290",
+  "lat": 27.6653,
+  "lon": 97.0359,
+  "family": "Tai-Kadai",
+  "branch": "Kam-Tai",
+  "group": "Tai (Shan)",
+  "state": "Kachin",
+  "status": "Threatened",
+  "docs": "Long grammar",
+  "countries": [
+   "IN",
+   "MM"
+  ]
+ },
+ {
+  "name": "Tai Nüa",
+  "glottocode": "tain1252",
+  "lat": 21.7837,
+  "lon": 99.722,
+  "family": "Tai-Kadai",
+  "branch": "Kam-Tai",
+  "group": "Tai (Shan)",
+  "state": "Shan",
+  "status": "Not endangered",
+  "docs": "Grammar",
+  "countries": [
+   "CN",
+   "LA",
+   "MM",
+   "TH",
+   "VN"
+  ]
+ },
+ {
+  "name": "Tai Laing",
+  "glottocode": "tail1248",
+  "lat": 24.9041,
+  "lon": 95.0772,
+  "family": "Tai-Kadai",
+  "branch": "Kam-Tai",
+  "group": "Tai (Shan)",
+  "state": "Sagaing",
+  "status": "Threatened",
+  "docs": "Grammar sketch",
+  "countries": [
+   "MM"
+  ]
+ }
+]

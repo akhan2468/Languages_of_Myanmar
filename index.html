@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Languages of Myanmar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-hierarchy@3.1.2/dist/d3-hierarchy.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="main">
+    <div id="header">
+        <h1>Languages of Myanmar</h1>
+        <p>106 languages from 5 language families. Where are they spoken, are they written, and which ones are disappearing?
+           Click a pin on the map to see one language.</p>
+    </div>
+
+    <div id="dashboard">
+        <!-- 1. Map -->
+        <div id="mapWrap">
+            <div id="mainChart"></div>
+            <div id="infoBox" style="display:none;"></div>
+            <div id="legend"></div>
+        </div>
+
+        <!-- 2. Bar chart -->
+        <div class="box">
+            <div id="stateChart" class="chart"></div>
+            <p class="note" id="stateNote"></p>
+        </div>
+
+        <!-- 3. Packed circles -->
+        <div class="box">
+            <div id="scriptChart" class="chart"></div>
+            <p class="note" id="scriptNote"></p>
+        </div>
+
+        <!-- 4. Stacked bar -->
+        <div class="box">
+            <div id="endangerChart" class="chart"></div>
+            <p class="note" id="endangerNote"></p>
+        </div>
+
+        <!-- 5. Radial tree -->
+        <div class="box">
+            <div id="treeChart" class="chart"></div>
+            <p class="note">Centre = Myanmar, then language family, then branch (biggest branches labelled). Each dot at the edge is one language,
+               coloured by endangerment. Hover a dot to see its name.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        Data: Glottolog 5 (glottolog.org) for language locations, families and endangerment levels.
+        State borders: Natural Earth. Scripts: my own research on Wikipedia for 23 major languages.
+        Glottolog gives one point per language, so a pin marks the centre of where it is spoken.
+    </div>
+
+    <div id="contextMenu" style="display:none; position:absolute; background-color:white; border:1px solid #ccc; padding:10px; z-index:1000;">
+        <p id="langName"></p>
+        <p id="langCode"></p>
+        <p>
+            <span id="langCoords"></span>
+            <button id="copyCoordsBtn">Copy</button>
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        var stateChart = echarts.init(document.getElementById('stateChart'));
+        var scriptChart = echarts.init(document.getElementById('scriptChart'));
+        var endangerChart = echarts.init(document.getElementById('endangerChart'));
+        var treeChart = echarts.init(document.getElementById('treeChart'));
+
+        // Colours for the language groups (used by the map pins and the charts).
+        var GROUP_COLORS = {
+            'Chin & Naga': '#b30000',
+            'Burmish & Lolo': '#ff8000',
+            'Karen': '#2424a9',
+            'Kachin (Jingpho)': '#00a3a3',
+            'Palaung & Wa': '#5d0990',
+            'Tai (Shan)': '#008700',
+            'Other': '#ff3385'
+        };
+
+        // Endangerment levels from safe to extinct
+        var STATUS_LIST = ['Not endangered', 'Threatened', 'Shifting', 'Moribund', 'Nearly extinct', 'Extinct'];
+        var STATUS_COLORS = ['#d3dbdf', '#a8b7be', '#8b9fa9', '#426372', '#264a5b', '#0f1e25'];
+        var scriptData = [];  
+
+        // Step 1: Calculate the average language coordinates for the map center 
+        function getMapCenter(allData) {
+            var totalLongitude = 0;
+            var totalLatitude = 0;
+            for (var i = 0; i < allData.length; i++) {
+                totalLongitude += allData[i]['lon'];
+                totalLatitude += allData[i]['lat'];
+            }
+            return [totalLongitude / allData.length, totalLatitude / allData.length];
+        }
+
+        // Step 2: Create the map with one pin per language.
+        function createMap(allData) {
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYmlhYm9ibyIsImEiOiJjamVvejdlNXQxZnBuMndtdWhiZHRuaTNpIn0.PIS9wtUxm_rz_IzF2WFD1g';
+            const map = new mapboxgl.Map({
+                container: 'mainChart',
+                style: 'mapbox://styles/mapbox/navigation-night-v1',
+                center: getMapCenter(allData),
+                zoom: 4.6
+            });
+
+            map.on('style.load', function () {
+                add3DTerrain(map);
+                addStateBorders(map);
+            });
+
+            var contextMenu = document.getElementById('contextMenu');
+            document.body.addEventListener('click', function () {
+                contextMenu.style.display = 'none';
+            });
+
+            for (var i = 0; i < allData.length; i++) {
+                addLanguageMarker(map, allData[i], contextMenu);
+            }
+
+            createLegend();
+        }
+
+        // One pin for one language
+        function addLanguageMarker(map, language, contextMenu) {
+            var marker = new mapboxgl.Marker({ color: GROUP_COLORS[language.group], scale: 0.6 })
+                .setLngLat([language.lon, language.lat])
+                .addTo(map);
+
+            marker.getElement().addEventListener('click', function (e) {
+                e.stopPropagation();
+                showInfoBox(language);
+                highlightLanguage(language);
+            });
+
+            marker.getElement().addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+                document.getElementById('langName').textContent = 'Language: ' + language.name;
+                document.getElementById('langCode').textContent = 'Glottocode: ' + language.glottocode;
+                document.getElementById('langCoords').textContent = 'Coord: ' + language.lon.toFixed(2) + ', ' + language.lat.toFixed(2);
+                document.getElementById('copyCoordsBtn').onclick = function () {
+                    navigator.clipboard.writeText(language.lon + ',' + language.lat);
+                    alert('Coordinate copied');
+                };
+                contextMenu.style.left = e.pageX + 'px';
+                contextMenu.style.top = e.pageY + 'px';
+                contextMenu.style.display = 'block';
+            });
+        }
+
+        // Elevation data + 3D terrain 
+        function add3DTerrain(map) {
+            map.addSource('mapbox-dem', {
+                'type': 'raster-dem',
+                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                'tileSize': 512,
+                'maxzoom': 14
+            });
+            map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+        }
+
+        // Draw the 14 state/region borders
+        function addStateBorders(map) {
+            map.addSource('states', { type: 'geojson', data: 'data/states.geojson' });
+            map.addLayer({
+                id: 'state-lines',
+                type: 'line',
+                source: 'states',
+                paint: { 'line-color': '#ffffff', 'line-width': 1.2, 'line-opacity': 0.8 }
+            });
+        }
+
+        function createLegend() {
+            var html = '<b>Language group</b><br>';
+            for (var group in GROUP_COLORS) {
+                html += '<span style="background:' + GROUP_COLORS[group] + '"></span>' + group + '<br>';
+            }
+            document.getElementById('legend').innerHTML = html;
+        }
+
+        function showInfoBox(language) {
+            var script = 'Not in my script table';
+            for (var i = 0; i < scriptData.length; i++) {
+                if (scriptData[i].name === language.name) {
+                    script = scriptData[i].script + ' (' + scriptData[i].written + ')';
+                }
+            }
+            var html = '<button onclick="this.parentNode.style.display=\'none\'">×</button>'
+                + '<h3>' + language.name + '</h3>'
+                + '<p><b>Group:</b> ' + language.group + '</p>'
+                + '<p><b>Family:</b> ' + language.family + ' › ' + language.branch + '</p>'
+                + '<p><b>State / region:</b> ' + language.state + '</p>'
+                + '<p><b>Endangerment:</b> ' + language.status + '</p>'
+                + '<p><b>Documentation:</b> ' + language.docs + '</p>'
+                + '<p><b>Script:</b> ' + script + '</p>'
+                + '<p><a href="https://glottolog.org/resource/languoid/id/' + language.glottocode + '" target="_blank">Open in Glottolog</a></p>';
+            var box = document.getElementById('infoBox');
+            box.innerHTML = html;
+            box.style.display = 'block';
+        }
+
+        // Step 3: Bar chart - number of languages in each state/region.
+        function createStateChart(allData, chart) {
+            var counts = {};
+            for (var i = 0; i < allData.length; i++) {
+                var state = allData[i].state;
+                counts[state] = (counts[state] || 0) + 1;
+            }
+            
+            var list = [];
+            for (var name in counts) {
+                if (name !== 'Cross-border') {
+                    list.push({ name: name, value: counts[name] });
+                }
+            }
+            list.sort(function (a, b) { return b.value - a.value; });
+            var names = [];
+            var values = [];
+            for (var j = 0; j < list.length; j++) {
+                names.push(list[j].name);
+                values.push(list[j].value);
+            }
+
+            var option = {
+                title: { text: 'Languages per State / Region', left: 'center', textStyle: { fontSize: 15 } },
+                tooltip: { trigger: 'axis' },
+                xAxis: { type: 'category', data: names, axisLabel: { rotate: 30, fontSize: 11 } },
+                yAxis: { type: 'value', name: 'Languages' },
+                series: [{
+                    name: 'Languages',
+                    data: values,
+                    type: 'bar',
+                    itemStyle: { color: '#587279', borderRadius: [4, 4, 0, 0] },
+                    emphasis: { itemStyle: { color: '#2b373b' } },
+                    label: { show: true, position: 'top', fontSize: 11 }
+                }]
+            };
+            chart.setOption(option);
+
+            document.getElementById('stateNote').textContent =
+            names[0] + ' and ' + names[1] + ' have the most languages. These are the mountain areas at the borders.';
+        }
+
+        // Step 4: Nested Packed circles
+        function createScriptChart(scripts, chart) {
+            var root = { name: 'All', children: [] };
+            for (var i = 0; i < scripts.length; i++) {
+                var s = scripts[i];
+                var level1 = findOrAdd(root.children, s.written);
+                var level2 = findOrAdd(level1.children, s.script);
+                level2.children.push({ name: s.name, group: s.group, value: 1 });
+            }
+
+            var width = chart.getWidth();
+            var height = chart.getHeight();
+            var hierarchy = d3.hierarchy(root).sum(function (d) { return d.value; });
+            var nodes = d3.pack().size([width, height]).padding(5)(hierarchy).descendants();
+            nodes.shift();   
+
+            var minX = 99999, maxX = -99999, minY = 99999, maxY = -99999;
+            for (var n = 0; n < nodes.length; n++) {
+                minX = Math.min(minX, nodes[n].x - nodes[n].r);
+                maxX = Math.max(maxX, nodes[n].x + nodes[n].r);
+                minY = Math.min(minY, nodes[n].y - nodes[n].r);
+                maxY = Math.max(maxY, nodes[n].y + nodes[n].r);
+            }
+            var top = 36;   // space for the title
+            var zoom = Math.min((width - 10) / (maxX - minX), (height - top - 10) / (maxY - minY));
+            var offsetX = (width - (maxX - minX) * zoom) / 2;
+            for (var m = 0; m < nodes.length; m++) {
+                nodes[m].x = (nodes[m].x - minX) * zoom + offsetX;
+                nodes[m].y = (nodes[m].y - minY) * zoom + top;
+                nodes[m].r = nodes[m].r * zoom;
+            }
+
+            var option = {
+                title: { text: 'Script Types: Written vs. Oral', left: 'center', textStyle: { fontSize: 15 } },
+                tooltip: {
+                    formatter: function (params) {
+                        var node = nodes[params.dataIndex];
+                        if (node.depth === 3) {
+                            return '<b>' + node.data.name + '</b><br>' + node.parent.data.name + ' · ' + node.data.group;
+                        }
+                        return '<b>' + node.data.name + '</b><br>' + node.leaves().length + ' languages';
+                    }
+                },
+                series: [{
+                    type: 'custom',
+                    coordinateSystem: 'none',
+                    data: nodes.map(function (n, index) { return index; }),
+                    renderItem: function (params) {
+                        var node = nodes[params.dataIndex];
+                        var fill = '#eef0fb';
+                        var text = '';
+                        var textPosition = 'inside';
+                        if (node.depth === 1) {
+                            fill = node.data.name === 'Written' ? '#bcc1c3' : '#d7dadb';
+                            text = node.data.name;
+                            textPosition = 'insideTop';
+                        } else if (node.depth === 2) {
+                            fill = 'rgba(255,255,255,0.75)';
+                            text = (node.r > 22 && node.children.length > 2) ? node.data.name : '';
+                            textPosition = 'insideTop';
+                        } else {
+                            fill = GROUP_COLORS[node.data.group];
+                            var words = node.data.name.replace('Southern ', '').replace('South ', '').replace('Eastern ', '').split(' ');
+                            text = words[0];
+                        }
+                        return {
+                            type: 'circle',
+                            shape: { cx: node.x, cy: node.y, r: node.r },
+                            style: { fill: fill, stroke: '#9aa0c8', lineWidth: node.depth === 3 ? 0 : 1 },
+                            textContent: {
+                                style: { text: text, fontSize: node.depth === 3 ? 8 : 11, fontWeight: node.depth === 3 ? 'normal' : 'bold',
+                                         fill: node.depth === 3 ? '#ffffff' : '#1f2240' }
+                            },
+                            textConfig: { position: textPosition }
+                        };
+                    }
+                }]
+            };
+            chart.setOption(option, true);
+
+            var written = 0;
+            for (var j = 0; j < scripts.length; j++) {
+                if (scripts[j].written === 'Written') written++;
+            }
+            document.getElementById('scriptNote').textContent =
+                written + ' of the ' + scripts.length + ' major languages I checked have a written tradition. Colour = language group.';
+        }
+
+        function findOrAdd(children, name) {
+            for (var i = 0; i < children.length; i++) {
+                if (children[i].name === name) return children[i];
+            }
+            var child = { name: name, children: [] };
+            children.push(child);
+            return child;
+        }
+
+        // Step 5: Stacked bar - endangerment level inside each language group.
+        var groupOrder = [];
+        function createEndangerChart(allData, chart) {
+            groupOrder = Object.keys(GROUP_COLORS);
+
+            var series = [];
+            for (var s = 0; s < STATUS_LIST.length; s++) {
+                var values = [];
+                for (var g = 0; g < groupOrder.length; g++) {
+                    var count = 0;
+                    for (var i = 0; i < allData.length; i++) {
+                        if (allData[i].group === groupOrder[g] && allData[i].status === STATUS_LIST[s]) count++;
+                    }
+                    values.push(count);
+                }
+                series.push({
+                    name: STATUS_LIST[s],
+                    type: 'bar',
+                    stack: 'total',
+                    data: values,
+                    itemStyle: { color: STATUS_COLORS[s] },
+                    emphasis: { focus: 'self', itemStyle: { borderColor: '#e63946', borderWidth: 2 } }
+                });
+            }
+
+            var option = {
+                title: { text: 'Endangerment Level by Language Group', left: 'center', textStyle: { fontSize: 15 } },
+                tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+                legend: { top: 26, itemWidth: 12, itemHeight: 10, textStyle: { fontSize: 11 } },
+                grid: { left: 10, right: 20, top: 84, bottom: 5, containLabel: true },
+                xAxis: { type: 'category', data: groupOrder, axisLabel: { rotate: 25, fontSize: 11 } },
+                yAxis: { type: 'value' },
+                series: series
+            };
+            chart.setOption(option);
+
+            var atRisk = 0;
+            var extinct = 0;
+            for (var k = 0; k < allData.length; k++) {
+                var st = allData[k].status;
+                if (st === 'Threatened' || st === 'Shifting' || st === 'Moribund' || st === 'Nearly extinct') atRisk++;
+                if (st === 'Extinct') extinct++;
+            }
+            document.getElementById('endangerNote').textContent =
+                atRisk + ' of ' + allData.length + ' languages are endangered and ' + extinct + ' are already extinct. Darker colour = closer to extinction.';
+        }
+
+        // Step 6: Radial tree - Myanmar > family > branch > language.
+        function createTreeChart(allData, chart) {
+            var root = { name: 'Myanmar', children: [] };
+            for (var i = 0; i < allData.length; i++) {
+                var lang = allData[i];
+                var family = findOrAdd(root.children, lang.family);
+                var branch = family;
+                if (lang.branch !== lang.family) {
+                    branch = findOrAdd(family.children, lang.branch);
+                }
+                branch.children.push({
+                    name: lang.name,
+                    value: lang.status,
+                    symbolSize: 7,
+                    itemStyle: { color: STATUS_COLORS[STATUS_LIST.indexOf(lang.status)], borderColor: '#ffffff', borderWidth: 0.5 }
+                });
+            }
+
+            for (var f = 0; f < root.children.length; f++) {
+                var branches = root.children[f].children;
+                for (var b = 0; b < branches.length; b++) {
+                    if (branches[b].children && branches[b].children.length >= 9) {
+                        branches[b].label = { show: true, fontWeight: 'bold', fontSize: 10 };
+                    }
+                }
+            }
+
+            var option = {
+                title: { text: 'Language Family Tree', left: 'center', textStyle: { fontSize: 15 } },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function (params) {
+                        if (params.data.children && params.data.children.length > 0) {
+                            return '<b>' + params.name + '</b>';
+                        }
+                        return '<b>' + params.name + '</b><br>' + params.value;
+                    }
+                },
+                series: [{
+                    type: 'tree',
+                    data: [root],
+                    layout: 'radial',
+                    top: 50, bottom: 20, left: 20, right: 20,
+                    symbol: 'circle',
+                    symbolSize: 5,
+                    initialTreeDepth: 3,
+                    roam: false,
+                    itemStyle: { color: '#2b373b', borderColor: '#2b373b' },
+                    label: { show: false, fontSize: 10, color: '#1f2240' },
+                    lineStyle: { color: '#587279', width: 1, curveness: 0.4 },
+                    emphasis: { focus: 'ancestor', label: { show: true } },
+                    expandAndCollapse: true,
+                    animationDuration: 600
+                }]
+            };
+            chart.setOption(option);
+        }
+
+        // Step 7: When a pin is clicked, highlight that language in the other charts.
+        function highlightLanguage(language) {
+            stateChart.dispatchAction({ type: 'downplay' });
+            stateChart.dispatchAction({ type: 'highlight', seriesIndex: 0, name: language.state });
+            stateChart.dispatchAction({ type: 'showTip', seriesIndex: 0, name: language.state });
+
+            endangerChart.dispatchAction({ type: 'downplay' });
+            endangerChart.dispatchAction({
+                type: 'highlight',
+                seriesIndex: STATUS_LIST.indexOf(language.status),
+                dataIndex: groupOrder.indexOf(language.group)
+            });
+            treeChart.dispatchAction({ type: 'showTip', name: language.name });
+        }
+
+        // Step 8: Load the data, then create the map and all charts.
+        $.getJSON('languages.json', function (allData) {
+            console.log('We have ' + allData.length + ' languages.');
+
+            createMap(allData);
+            createStateChart(allData, stateChart);
+            createEndangerChart(allData, endangerChart);
+            createTreeChart(allData, treeChart);
+
+            $.getJSON('data/scripts.json', function (scripts) {
+                scriptData = scripts;
+                createScriptChart(scriptData, scriptChart);
+            });
+        });
+
+        window.addEventListener('resize', function () {
+            stateChart.resize();
+            endangerChart.resize();
+            treeChart.resize();
+            scriptChart.resize();
+            createScriptChart(scriptData, scriptChart);
+        });
+    </script>
+</body>
+
+</html>

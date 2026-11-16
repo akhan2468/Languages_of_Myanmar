@@ -1,0 +1,163 @@
+[
+ {
+  "name": "Burmese",
+  "group": "Burmish & Lolo",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Burmese_language"
+ },
+ {
+  "name": "Rakhine",
+  "group": "Burmish & Lolo",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Arakanese_language"
+ },
+ {
+  "name": "Shan",
+  "group": "Tai (Shan)",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Shan_language"
+ },
+ {
+  "name": "Khamti",
+  "group": "Tai (Shan)",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Khamti_language"
+ },
+ {
+  "name": "Mon",
+  "group": "Other",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Mon_language"
+ },
+ {
+  "name": "S'gaw Karen",
+  "group": "Karen",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/S%27gaw_Karen_language"
+ },
+ {
+  "name": "Pwo Eastern Karen",
+  "group": "Karen",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Eastern_Pwo_language"
+ },
+ {
+  "name": "Pa'o Karen",
+  "group": "Karen",
+  "script": "Burmese script",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Pa%27O_language"
+ },
+ {
+  "name": "Eastern Kayah",
+  "group": "Karen",
+  "script": "Kayah Li",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Kayah_language"
+ },
+ {
+  "name": "Southern Jinghpaw",
+  "group": "Kachin (Jingpho)",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Jingpo_language"
+ },
+ {
+  "name": "Lisu",
+  "group": "Burmish & Lolo",
+  "script": "Fraser",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Lisu_language"
+ },
+ {
+  "name": "Lahu",
+  "group": "Burmish & Lolo",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Lahu_language"
+ },
+ {
+  "name": "Akha",
+  "group": "Burmish & Lolo",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Akha_language"
+ },
+ {
+  "name": "South Wa",
+  "group": "Palaung & Wa",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Wa_language"
+ },
+ {
+  "name": "Ruching Palaung",
+  "group": "Palaung & Wa",
+  "script": "Other",
+  "written": "Mostly oral",
+  "source": "https://en.wikipedia.org/wiki/Pale_language"
+ },
+ {
+  "name": "Haka Chin",
+  "group": "Chin & Naga",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Hakha_Chin"
+ },
+ {
+  "name": "Falam Chin",
+  "group": "Chin & Naga",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Falam_language"
+ },
+ {
+  "name": "Tedim Chin",
+  "group": "Chin & Naga",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Tedim_language"
+ },
+ {
+  "name": "Zotung Chin",
+  "group": "Chin & Naga",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Zotung_language"
+ },
+ {
+  "name": "Mro Chin",
+  "group": "Chin & Naga",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Mro-Khimi_language"
+ },
+ {
+  "name": "Rawang",
+  "group": "Other",
+  "script": "Latin",
+  "written": "Written",
+  "source": "https://en.wikipedia.org/wiki/Rawang_language"
+ },
+ {
+  "name": "Rohingya",
+  "group": "Other",
+  "script": "Hanifi Rohingya",
+  "written": "Mostly oral",
+  "source": "https://en.wikipedia.org/wiki/Rohingya_language"
+ },
+ {
+  "name": "Moken",
+  "group": "Other",
+  "script": "None",
+  "written": "Mostly oral",
+  "source": "https://en.wikipedia.org/wiki/Moken_language"
+ }
+]
